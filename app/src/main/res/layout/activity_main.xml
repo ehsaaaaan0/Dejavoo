@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mikronexus"
+        android:id="@+id/mikronexus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/_30mdp"
+        android:layout_marginTop="@dimen/_30mdp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/Text"
+        android:textSize="@dimen/_30font_mdp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:id="@+id/cfa"
+        app:layout_constraintStart_toStartOf="@+id/mikronexus"
+        app:layout_constraintTop_toBottomOf="@+id/mikronexus"
+        android:fontFamily="@font/poppins_aemibold"
+        android:textColor="@color/Text"
+        android:textSize="@dimen/_15font_mdp"
+        android:layout_marginTop="-10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pkg"
+        android:id="@+id/pkg"
+        app:layout_constraintStart_toStartOf="@+id/cfa"
+        app:layout_constraintTop_toBottomOf="@+id/cfa"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/Text"
+        android:textStyle="italic"
+        android:textSize="@dimen/_15font_mdp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/dat"
+        app:layout_constraintStart_toStartOf="@+id/pkg"
+        app:layout_constraintTop_toBottomOf="@+id/pkg"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/Text"
+        android:textStyle="italic"
+        android:textSize="@dimen/_15font_mdp"/>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_60mdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/button_bg"
+        android:text="Proceed"
+        android:drawableTint="@color/Text"
+        android:id="@+id/proceed"
+        android:textSize="@dimen/_15font_mdp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/Text"
+        android:drawableEnd="@drawable/arrow"
+        android:paddingEnd="@dimen/_20mdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="@dimen/_55mdp"
+        android:layout_marginBottom="@dimen/_55mdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
